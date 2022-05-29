@@ -1,0 +1,41 @@
+.title-introduction-1{
+    float: right;
+    background-color: whitesmoke;
+    width: 85%;
+    height: 100vh;
+    margin-top: 105px;
+    background-position: center;
+    background-size: cover;
+  }
+
+.sidebar{
+    float: left;
+    background-color: white;
+    width: 15%;
+    height: auto;
+    margin-top: 130px;
+    background-position: center;
+    background-size: cover;
+  }
+
+.addtext{
+    background-color: white;
+    text-align: center;
+    font-size: larger;
+    width: 100px;
+    margin-left: 89%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+table, th, tr {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+.fortable{
+    color: crimson;
+    width: 90%;
+    height: auto;
+  }
