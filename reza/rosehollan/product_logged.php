@@ -1,0 +1,85 @@
+<?php
+require "config/constants.php";
+session_start();
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/katalog.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>RoseHollan</title>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="height: 12vh; opacity: 0.85;">
+    <div class="container-fluid">
+      <a class="navbar-brand"
+        style="cursor: default; color: crimson; padding-left: 50px; margin-right: 280px; font-size: 25px;"><strong>RoseHollan</strong></a>
+      <a href="index_logged.php" class="navbar-brand hover-select"
+        style="cursor: pointer; font-size: 17px; font-weight: 600;">Beranda</a>
+      <a href="product_logged.php" class="navbar-brand hover-select"
+        style="cursor: Pointer; font-size: 17px; font-weight: 600;">Katalog</a>
+      <a href="about_logged.php" class="navbar-brand nav-now"
+        style="cursor: pointer; font-size: 17px; font-weight: 600;">Tentang</a>
+      <a href="contact_logged.php" class="navbar-brand hover-select"
+        style="cursor: pointer; font-size: 17px; font-weight: 600;">Kontak</a>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end ms-auto">
+        <a href="cart.php" class="navbar-brand hover-select"
+          style="cursor: pointer; font-size: 17px; font-weight: 600;">Pesanan saya</a>
+        <a href="profil.php"><i class="bi bi-person-fill" style='color:crimson; font-size:20px; margin-right: 50px;'></i></a>
+      </div>
+    </div>
+  </nav>
+    
+    <!-- KONTEN -->
+    <div class="title-introduction-1">
+      <div>
+        <h2 style="text-align: center; width: 100%; cursor: default; color:crimson; font-size: 40px; font-weight: 700; padding-top: 120px;">Produk RoseHollan</h2>
+        <p style="text-align: justify; width: 100%; padding-top: 30px; padding-left: 15%; padding-right: 15%; color: crimson;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias expedita, id eveniet distinctio eum veniam ratione quaerat recusandae molestiae iste itaque voluptate necessitatibus dicta. Est totam iusto tempora optio. Perferendis, placeat doloribus consequatur eligendi eveniet aliquid dignissimos similique pariatur vitae quisquam facilis cupiditate atque architecto ipsa repudiandae laborum porro optio reprehenderit magnam! Aliquam, eaque at! Iure cumque ullam sapiente molestiae, eos similique dolorem fuga enim pariatur eum odio cupiditate quasi saepe nulla totam officiis, at fugit quis expedita? Consectetur doloribus rem porro deserunt exercitationem.</p>
+      </div>
+      <div class="container" style="margin-top: 50px; padding-bottom: 100px; width: 80%;">
+        <div class="row">
+					<div class="col-md-12 col-xs-12" id="product_msg"></div>
+				</div>
+					<div class="panel-body">
+						<div id="get_product">
+							<!--Here we get product jquery Ajax Request-->
+						</div>
+						<!--<div class="col-md-4">
+							<div class="panel panel-info">
+								<div class="panel-heading">Samsung Galaxy</div>
+								<div class="panel-body">
+									<img src="product_images/images.JPG"/>
+								</div>
+								<div class="panel-heading">Rs.500.00
+									<button style="float:right;" class="btn btn-danger btn-xs">AddToCart</button>
+								</div>
+							</div>
+						</div> -->
+					</div>
+					<div></div>
+				</div>
+      </div>
+      
+    </div>
+
+    <!-- FOOTER -->
+    <div class="bot-footer" style="text-align: center; font-size: 45px; font-weight: 600; color: whitesmoke;">
+      FOOTER
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
