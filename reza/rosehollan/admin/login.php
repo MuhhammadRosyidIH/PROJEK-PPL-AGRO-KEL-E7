@@ -18,7 +18,7 @@
 			    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
 			  </div>
 			  <input type="hidden" name="admin_login" value="1">
-			  <button type="button" class="btn btn-success login-btn">Login</button>
+			  <button type="button" class="btn btn-danger login-btn">Login</button>
 			</form>
 		</div>
 	</div>

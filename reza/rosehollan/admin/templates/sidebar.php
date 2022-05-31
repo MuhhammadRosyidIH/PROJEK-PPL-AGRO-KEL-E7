@@ -37,13 +37,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?php echo ($page == '.php') ? 'active' : ''; ?>" href="customers.php">
+            <a class="nav-link <?php echo ($page == 'trx.log.php') ? 'active' : ''; ?>" href="trx_log.php">
               <span data-feather="book"></span>
               Pencatatan
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?php echo ($page == '.php') ? 'active' : ''; ?>" href="customers.php">
+            <a class="nav-link <?php echo ($page == 'production.php') ? 'active' : ''; ?>" href="production.php">
               <span data-feather="file-text"></span>
               Produksi
             </a>

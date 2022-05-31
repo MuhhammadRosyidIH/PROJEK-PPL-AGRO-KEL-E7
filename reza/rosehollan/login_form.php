@@ -33,7 +33,7 @@ if (isset($_POST["login_user_with_product"])) {
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">	
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand">Ecommerce</a>
+				<a href="#" class="navbar-brand">RoseHollan</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
@@ -65,7 +65,7 @@ if (isset($_POST["login_user_with_product"])) {
 							<label for="email">Password</label>
 							<input type="password" class="form-control" name="password" id="password" required/>
 							<p><br/></p>
-							<a href="#" style="color:#333; list-style:none;">Forgotten Password</a><input type="submit" class="btn btn-success" style="float:right;" Value="Login">
+							<a href="#" style="color:#333; list-style:none;">Forgotten Password</a><input type="submit" class="btn btn-danger" style="float:right;" Value="Login">
 							<!--If user dont have an account then he/she will click on create account button-->
 							<div><a href="customer_registration.php?register=1">Create a new account?</a></div>						
 						</form>

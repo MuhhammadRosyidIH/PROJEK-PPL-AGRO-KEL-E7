@@ -28,9 +28,9 @@ session_start();
         style="cursor: default; color: crimson; padding-left: 50px; margin-right: 280px; font-size: 25px;"><strong>RoseHollan</strong></a>
       <a href="index_logged.php" class="navbar-brand hover-select"
         style="cursor: pointer; font-size: 17px; font-weight: 600;">Beranda</a>
-      <a href="product_logged.php" class="navbar-brand hover-select"
+      <a href="product_logged.php" class="navbar-brand nav-now"
         style="cursor: Pointer; font-size: 17px; font-weight: 600;">Katalog</a>
-      <a href="about_logged.php" class="navbar-brand nav-now"
+      <a href="about_logged.php" class="navbar-brand hover-select"
         style="cursor: pointer; font-size: 17px; font-weight: 600;">Tentang</a>
       <a href="contact_logged.php" class="navbar-brand hover-select"
         style="cursor: pointer; font-size: 17px; font-weight: 600;">Kontak</a>
