@@ -1,0 +1,15 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar-brand.hover-select {
+    color: whitesmoke;
+}
+
+.navbar-brand.hover-select:hover {
+    color: wheat;
+}
+
+.navbar-brand.nav-now {
+    color: gray;
+}
