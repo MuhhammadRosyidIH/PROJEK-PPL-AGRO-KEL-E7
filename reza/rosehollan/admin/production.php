@@ -10,6 +10,9 @@
       	<div class="col-10">
       		<h2>Biaya Produksi</h2>
       	</div>
+				<div class="col-2">
+      		<a href="#" data-toggle="modal" data-target="#add_production_modal" class="btn btn-warning btn-sm">Add Production</a>
+      	</div>
       </div>
       
       <div class="table-responsive">
@@ -17,9 +20,9 @@
           <thead>
             <tr>
               <th>#</th>
-              <th>Activity</th>
-              <th>Income</th>
-              <th>Outcome</th>
+              <th>Object</th>
+              <th>Quantity</th>
+              <th>Price</th>
               <th>Date</th>
 							<th>Description</th>
 							<th>Action</th>

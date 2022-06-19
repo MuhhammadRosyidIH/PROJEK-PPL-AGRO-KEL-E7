@@ -8,10 +8,15 @@
 
       <div class="row">
       	<div class="col-10">
-      		<h2>Biaya Produksi</h2>
+      		<h2>Pembukuan</h2>
+      	</div>
+				<div class="col-2">
+      		<a href="#" data-toggle="modal" data-target="#add_trx_log_modal" class="btn btn-warning btn-sm">Add New Data</a>
       	</div>
       </div>
       
+
+
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -46,7 +51,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="add_product_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="#add_trx_log_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

@@ -59,17 +59,6 @@ session_start();
 						<div id="get_product">
 							<!--Here we get product jquery Ajax Request-->
 						</div>
-						<!--<div class="col-md-4">
-							<div class="panel panel-info">
-								<div class="panel-heading">Samsung Galaxy</div>
-								<div class="panel-body">
-									<img src="product_images/images.JPG"/>
-								</div>
-								<div class="panel-heading">Rs.500.00
-									<button style="float:right;" class="btn btn-danger btn-xs">AddToCart</button>
-								</div>
-							</div>
-						</div> -->
 					</div>
 					<div></div>
 				</div>

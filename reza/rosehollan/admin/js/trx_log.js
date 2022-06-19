@@ -34,12 +34,40 @@ $(document).ready(function(){
 
 				
 
-				
-
 			}
 		})
 		
 	}
+
+	$(".add-trx_log").on("click", function(){
+
+		$.ajax({
+
+			url : '../admin/classes/Trx_log.php',
+			method : 'POST',
+			data : new FormData($("#add-trx_log-form")[0]),
+			contentType : false,
+			cache : false,
+			processData : false,
+			success : function(response){
+				console.log(response);
+				if (response.status == 202) {
+					$("#edit-trx_log-form").trigger("reset");
+					$("#edit_trx_log_modal").modal('hide');
+					getProducts();
+					alert(response.message);
+					window.location.href = "Trx_log.php";
+				}else if(response.status == 303){
+					// window.location.href = "products.php";
+					alert(response.message);
+					
+				}
+			}
+
+		});
+
+	});
+
 
 
 });

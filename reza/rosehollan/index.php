@@ -44,7 +44,7 @@
       <h2
         style="width: 100%; cursor: default; color:crimson; font-size: 45px; font-weight: 700; padding-top: 190px; text-align: left;">Rasa mawar terbaik ada di kelopaknya</h2>
       <p style="width: 100%; font-size: 16px; padding-top: 10px;">Tempatnya berbelanja produk olahan bunga mawar berkualitas dengan macam produk teh, sirup, nugget, dan sebagainya. Ayo berbelanja sekarang!</p>
-      <div><a href="../tentang/tentang.html">
+      <div><a href="about.php">
         <button type="button" class="btn btn-danger me-md-3" style="width: 145px; height: 40px; text-align: center; font-weight: 400px;">Selengkapnya</button>
         </a>
       </div>

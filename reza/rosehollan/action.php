@@ -217,7 +217,9 @@ if (isset($_POST["Common"])) {
 		        		<input type="file" name="payment_image" class="form-control">
 		        </div>
 						<div class="col-12">
+							<a href="wait.php">
         			<button type="button" class="btn btn-danger payment">Submit</button>
+							</a>
         		</div>
 							';
 				}

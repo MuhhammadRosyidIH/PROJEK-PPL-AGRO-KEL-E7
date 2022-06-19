@@ -54,7 +54,7 @@ $(document).ready(function(){
 				if(data == "login_success"){
 					window.location.href = "index_logged.php";
 				}else if(data == "cart_login"){
-					window.location.href = "cart.php";
+					window.location.href = "index_logged.php";
 				}else{
 					$("#e_msg").html(data);
 					$(".overlay").hide();
@@ -130,15 +130,6 @@ $(document).ready(function(){
 		})
 	}
 
-	//Fetch Cart item from Database to dropdown menu
-
-	/*
-		Whenever user change qty we will immediate update their total amount by using keyup funtion
-		but whenever user put something(such as ?''"",.()''etc) other than number then we will make qty=1
-		if user put qty 0 or less than 0 then we will again make it 1 qty=1
-		('.total').each() this is loop funtion repeat for class .total and in every repetation we will perform sum operation of class .total value 
-		and then show the result into class .net_total
-	*/
 	$("body").delegate(".qty","keyup",function(event){
 		event.preventDefault();
 		var row = $(this).parent().parent();
@@ -156,15 +147,10 @@ $(document).ready(function(){
 		$('.total').each(function(){
 			net_total += ($(this).val()-0);
 		})
-		$('.net_total').html("Total : Rp  aca ca " +net_total);
+		$('.net_total').html("Total : Rp " +net_total);
 
 	})
-	//Change Quantity end here 
 
-	/*
-		whenever user click on .remove class we will take product id of that row 
-		and send it to action.php to perform product removal operation
-	*/
 	$("body").delegate(".remove","click",function(event){
 		var remove = $(this).parent().parent().parent();
 		var remove_id = remove.find(".remove").attr("remove_id");
@@ -178,10 +164,7 @@ $(document).ready(function(){
 			}
 		})
 	})
-	/*
-		whenever user click on .update class we will take product id of that row 
-		and send it to action.php to perform product qty updation operation
-	*/
+
 	$("body").delegate(".update","click",function(event){
 		var update = $(this).parent().parent().parent();
 		var update_id = update.find(".update").attr("update_id");
@@ -200,13 +183,7 @@ $(document).ready(function(){
 	})
 	checkOutDetails();
 	net_total();
-	/*
-		checkOutDetails() function work for two purposes
-		First it will enable php isset($_POST["Common"]) in action.php page and inside that
-		there is two isset funtion which is isset($_POST["getCartItem"]) and another one is isset($_POST["checkOutDetials"])
-		getCartItem is used to show the cart item into dropdown menu 
-		checkOutDetails is used to show cart item into Cart.php page
-	*/
+
 	function checkOutDetails(){
 	 $('.overlay').show();
 		$.ajax({
@@ -234,7 +211,7 @@ $(document).ready(function(){
 		$('.total').each(function(){
 			net_total += ($(this).val()-0);
 		})
-		$('.net_total').html("Total : "+ "Rp" + " ababa" +net_total);
+		$('.net_total').html("Total : "+ "Rp" + " " +net_total);
 	}
 
 	//remove product from cart
